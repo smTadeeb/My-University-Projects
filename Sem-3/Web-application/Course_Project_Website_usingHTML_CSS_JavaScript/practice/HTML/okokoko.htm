@@ -1,0 +1,256 @@
+<html>
+<img src="C:\xampp\htdocs\practice\HTML\images\St.-Petersburg-Russia.jpg" style="width: 1000px; height: 967px; position: absolute; top: 70px; left: 0px; opacity: 70%; ">
+            
+            <div id="rusi">
+                <h5 style="position: absolute; left: -120px; top: 50px; width: 400px; font: Arial; font-size: 16">Зарегистрируйтесь и начните изучать русский язык</h5>
+                <img src="C:\xampp\htdocs\practice\HTML\images\rus.png" class="ru" style="position: absolute; top: 10px; left: -60px;">
+                <h3>OR</h3>
+            </div>
+            
+            
+            <div id="cred">
+                <h1 style="position: absolute; top: -245px; left: 110px; font: Comic Sans MS; color: #D9001B; width: 200px; font-size: 28px"> Здравствуйте !</h1>
+                
+            <form action="signup.php"; method="POST" ; onsubmit="return validate()"; name="vForm"; validate>  
+                    <h5 style="position: absolute; top: -55px; left: 0px; width: 100px;font: Arial; font-size: 19px">Your email</h5>
+                    <h5 style="position: absolute; top: 15px; left: 0px; width: 100px;font: Arial; font-size: 19px">Username</h5>
+                    <h5 style="position: absolute; top: 160px; left: 0px; width: 200px;font: Arial; font-size: 19px">Confirm password</h5>
+                    <h5 id="pass" style="position: absolute; width: 200px; top: 85px; left: 0px;font: Arial; font-size: 19px">Create your password</h5>
+                    <h5 style="position: absolute; top: 305px; left: 0px; width: 200px;font: Arial; font-size: 19px">Country of origin</h5>
+                    <h5 style="position: absolute; top: 230px; left: 0px; width: 200px;font: Arial; font-size: 19px">Name</h5>
+                    
+                 
+                        <div>
+                            <input type="text" name="email" placeholder="Email" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 0px;">
+                            <div id = "email_error"; class="val_error"></div>
+                    
+                        </div>
+                    
+                        <div>
+                            <input type="text" name="username" placeholder="Username" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 70px;">
+                            <div id = "username_error"; class="val_error"></div>
+                        </div>
+                    
+                         <div>
+                             <select name="country"  style="width: 310px; height: 28px; position: absolute; left: 0px; top: 360px;">
+                                  <option selected>--select your country--</option>
+                                  <option>USA</option>
+                                  <option>India</option>
+                                  <option>UAE</option>
+                                  <option>Azerbaijan</option>
+                                  <option>France</option>
+                                  <option>Italy</option>
+                                  <option>U.K.</option>
+                                  <option>Ireland</option>
+                                  <option>Germany</option>
+                                  <option>Poland</option>
+                                  <option>China</option>
+                                  <option>Singapore</option>
+                                  <option>Thailand</option>
+                                  <option>Nepal</option>
+                                  <option>Bhutan</option>
+                                  <option>Australia</option>
+                                  <option>Japan</option>
+                                  <option>Russia</option>
+                                  <option>Sri-Lanka</option>
+                                  <option>South africa</option>
+                                  <option>switzerland</option>
+                                  <option>Sweden</option>
+                                  <option>Saudi arabia</option>
+                               </select>
+                             <div id = "country_error"; class="val_error"></div>
+                          </div>
+                    
+                          <div>
+                             <input type="password" name="password" placeholder="password" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 140px;">
+                              <div id = "password_error"; class="val_error"></div>
+                          </div>
+                    
+                          <div>
+                             <input type="password" name="cpassword" placeholder="confirm password" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 215px;">
+                              <div id = "cpassword_error"; class="val_error"></div>
+                          </div>
+                    
+                          <div>
+                             <input type="text" name="name" placeholder="Full name" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 285px;">
+                              <div id = "name_error"; class="val_error"></div>
+                          </div>
+                
+            
+                <div>
+                 <input type="submit" id="signup" name="signup" value="Sign-up" style="position: absolute; top: 550px; left: 60px; width: 160px; height: 50px; border-radius: 25px; background-color: #116eee; font: Arial; font-size: 16px;color: white; font-weight: bold;">
+                </div>
+                
+                
+                    
+                    <h5 style="position: absolute; top: -70px; left: 40px; width: 200px;font: Arial; font-size: 19px">Age</h5>
+                    
+                 
+                        
+                        <div>
+                        <input type="text" name="age" placeholder="age" style="width: 310px; height: 28px; position: absolute; left: 40px; top: -15px;">
+                            <div id = "age_error"; class="val_error"></div>
+                        </div>
+                    
+                       <div>
+                        <label style="font: Arial; font-size: 20px; font-weight: bold;">Gender:</label>
+                        <label for="r1" style="color: white;">Male</label>
+                        <input type="radio" id="r1" name="r1" value="Male">
+                        <label for="r2" style="color: white;">Female</label>
+                        <input type="radio" id="r2" name="r1" value="Female">
+                        <label for="r3" style="color: white;">Other</label>
+                        <input type="radio" id="r2" name="r1" value="Other">
+                        <div id = "gender_error"; class="val_error"></div>
+                        </div>
+                </form>
+            
+            </div>
+            
+            
+            
+            
+            //____________________
+            
+            
+            
+               <script>
+    // Getting all the input text objects.
+       var email = document.forms["vForm"]["email"];
+       var username = document.forms["vForm"]["username"];
+       var country = document.forms["vForm"]["country"];
+       var password = document.forms["vForm"]["password"];
+       var cpassword = document.forms["vForm"]["cpassword"];
+       var name = document.forms["vForm"]["name"];
+       var age = document.forms["vForm"]["age"];
+       var gender = document.forms["vForm"]["r1"];
+       
+   // Getting all error display objects
+       var email_error = document.getElementById["email_error"];
+       var username_error = document.getElementById["username_error"];
+       var country_error = document.getElementById["country_error"];
+       var password_error = document.getElementById["password_error"];
+       var cpassword_error = document.getElementById["cpassword_error"];
+       var name_error = document.getElementById["name_error"];
+       var age_error = document.getElementById["age_error"];
+       var gender_error = document.getElementById["gender_error"];
+       
+   // Setting all event listeners
+       email.addEventListener("blur", emailVerify, true);
+       username.addEventListener("blur", usernameVerify, true);   
+       country.addEventListener("blur", countryVerify, true);
+       password.addEventListener("blur", passwordVerify, true);
+       age.addEventListener("blur", ageVerify, true);
+       gender.addEventListener("blur", genderVerify, true);
+       
+   // Validation function
+      function validate(){
+          
+          // email validation
+          if (email.value == ""){
+              email.style.border = "1px solid red";
+              email_error.textContent = "Email is required";
+              email.focus();
+              return false;
+          }
+          
+          // username validation
+          if (username.value == ""){
+              username.style.border = "1px solid red";
+              username_error.textContent = "Username is required";
+              username.focus();
+              return false;
+          }
+          
+          // country validation
+          if (country.value == ""){
+              country.style.border = "1px solid red";
+              country_error.textContent = "Country is required";
+              country.focus();
+              return false;
+          }
+          
+          // password validation
+          if (password.value == ""){
+              password.style.border = "1px solid red";
+              password_error.textContent = "password is required";
+              password.focus();
+              return false;
+          }
+          
+          // Checking whether the two password are equal or not
+             if (password.value != cpassword.value) {
+                 password.style.border = "1px solid red";
+                 cpassword.style.border = "1px solid red";
+                 password_error.innerHTML = "The two password do not match";
+                 return false;  
+             }
+          
+          // age validation
+          if (age.value == "") {
+              age.style.border = "1px solid red";
+              age_error.textContent = "age is required";
+              age.focus();
+              return false;
+          }
+          
+          // gender validation
+          if (gender.value == "") {
+              gender.style.border = "1px solid red";
+              gender_error.textContent = "age is required";
+              gender.focus();
+              return false;
+          }
+        }
+       
+          // Event handeler function
+             function emailVerify(){
+                   if  email.value != "" {
+                       email.style.border = "1px solid #5E6E66";
+                       email_error.innerHTML = ""; 
+                       return true;
+                   }
+              } 
+              
+              function usernameVerify(){
+                   if  username.value != "" {
+                       username.style.border = "1px solid #5E6E66";
+                       username_error.innerHTML = ""; 
+                       return true;
+                   }
+              } 
+                  
+              function countryVerify(){
+                   if  country.value != "" {
+                       country.style.border = "1px solid #5E6E66";
+                       country_error.innerHTML = ""; 
+                       return true;
+                   }
+              } 
+                      
+              function passwordVerify(){
+                   if  password.value != "" {
+                       password.style.border = "1px solid #5E6E66";
+                       password_error.innerHTML = ""; 
+                       return true;
+                   }
+              } 
+             
+               function ageVerify(){
+                   if  age.value != "" {
+                       age.style.border = "1px solid #5E6E66";
+                       age_error.innerHTML = ""; 
+                       return true;
+                   }
+              } 
+        
+             function genderVerify(){
+                   if  gender.value != "" {
+                       gender.style.border = "1px solid #5E6E66";
+                       gender_error.innerHTML = ""; 
+                       return true;
+                   }
+              } 
+              
+          
+          
+    </script>    

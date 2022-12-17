@@ -1,0 +1,144 @@
+<html>
+
+    <head><title>User Sign-up</title><link rel="stylesheet" href="signup.css">
+        <meta charset="utf-8">
+        <script src="jquery-3.5.1.min.js"></script></head>
+
+    <body>
+        
+        <div class="box"><header style="background-color: black; width: 1529px;
+    height: 70px; margin-left: -28%;"><img src="hello.png" style="margin-left: 50px;"></header>
+            
+            <img src="St.-Petersburg-Russia.jpg" style="width: 1529px; height: 967px; position: absolute; top: 70px; left: -28%; opacity: 70%; ">
+            
+            <div id="rusi">
+
+                <h5 style="position: absolute; left: -120px; top: 50px; width: 400px; font: Arial; font-size: 16">Зарегистрируйтесь и начните изучать русский язык</h5>
+                <img src="rus.png" class="ru" style="position: absolute; top: 10px; left: -60px;">
+                
+              <img src="facebook%20api.png" style="border-radius: 16px; height: 45px; width: 140px; margin-left: -100px; margin-top: 125px;">
+                
+                <img src="google%20api.png" style="border-radius: 16px; height: 45px; width: 140px; margin-left: 90px; margin-top: 125px;">
+                
+            </div>
+            
+            <div id="cred">
+            <h1 style="position: absolute; top: -245px; left: 110px; font: Comic Sans MS; color: #D9001B; width: 200px; font-size: 28px"> Здравствуйте !</h1>
+                
+            <form action="signup.php" method="post">  
+                
+            <h5 style="position: absolute; top: -55px; left: 0px; width: 100px;font: Arial; font-size: 19px">Your email</h5>
+                
+            <h5 style="position: absolute; top: 15px; left: 0px; width: 100px;font: Arial; font-size: 19px">Username</h5>
+                
+            <h5 style="position: absolute; top: 160px; left: 0px; width: 200px;font: Arial; font-size: 19px">Confirm password</h5>
+                
+            <h5 id="pass" style="position: absolute; width: 200px; top: 85px; left: 0px;font: Arial; font-size: 19px">Create your password</h5>
+                
+                <h5 style="position: absolute; top: 305px; left: 0px; width: 200px;font: Arial; font-size: 19px">Country of origin</h5>
+                
+                <h5 style="position: absolute; top: 230px; left: 0px; width: 200px;font: Arial; font-size: 19px">Name</h5>
+    
+                <ul type=none>
+                    <li>
+                        <input type="text" name="email" placeholder="Email" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 0px;" required>
+                    
+                    </li>
+                    
+                    <li>
+                        <input type="text" name="username" placeholder="Username" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 70px;" required>
+                    </li>
+                    
+                    <li>
+                        <select name="country"  style="width: 310px; height: 28px; position: absolute; left: 0px; top: 360px;" required>
+                        <option selected>--select your country--</option>
+                        <option>USA</option>
+                        <option>India</option>
+                        <option>UAE</option>
+                        <option>Azerbaijan</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>U.K.</option>
+                        <option>Ireland</option>
+                        <option>Germany</option>
+                        <option>Poland</option>
+                        <option>China</option>
+                        <option>Singapore</option>
+                        <option>Thailand</option>
+                        <option>Nepal</option>
+                        <option>Bhutan</option>
+                        <option>Australia</option>
+                        <option>Japan</option>
+                        <option>Russia</option>
+                        <option>Sri-Lanka</option>
+                        <option>South africa</option>
+                        <option>switzerland</option>
+                        <option>Sweden</option>
+                        <option>Saudi arabia</option>
+                        </select>
+                    </li>
+                    
+                    <li>
+                        <input type="password" name="password" placeholder="password" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 140px;" required>
+                    </li>
+                    
+                    <li>
+                        <input type="password" name="cpassword" placeholder="confirm password" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 215px;" required>
+                    </li>
+                    
+                    <li>
+                        <input type="text" name="name" placeholder="Full name" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 285px;">
+                    </li>
+                
+                </ul>
+                
+                <div style="position: absolute; top: 450px; left: -100%; width: 400px; font: Arial; font-size: 20px;">
+                    
+                    <h5 style="position: absolute; top: -70px; left: 40px; width: 200px;font: Arial; font-size: 19px">Age</h5>
+                    
+                    <ul type=none>
+                        
+                        <li>
+                        <input type="text" name="age" placeholder="age" style="width: 310px; height: 28px; position: absolute; left: 40px; top: -15px;" required>
+                        </li>
+                    
+                    <li>
+                        <label style="font: Arial; font-size: 20px; font-weight: bold;">Gender:</label>
+                        
+                        <label for="r1" style="color: white;">Male</label>
+                        <input type="radio" id="r1" name="r1" value="Male" required>
+                        
+                        <label for="r2" style="color: white;">Female</label>
+                        <input type="radio" id="r2" name="r1" value="Female" required>
+                        
+                        <label for="r3" style="color: white;">Other</label>
+                        <input type="radio" id="r2" name="r1" value="Other" required>
+                        </li>
+                    
+                        <li>
+                        <input type="checkbox" id="agree" name="agree" style="margin-top: 20px;" required>
+                        <h6 style="margin-top: -16px; margin-left: 20px; width: 400px;">Sign me up for Hello! updates, exclusive offers and learning tips!</h6>
+                        </li>
+                        
+                        <li>
+                        <h6 style="margin-top: 96px; margin-left: -10px; text-align: center; width: 325px;">By joining I declare that I have read and accept the<span style="color: darkblue;">Terms of Service</span> and<span style="color: darkblue;">Privacy Policy.</span></h6>
+                        </li>
+                    </ul>
+                
+                </div>
+                
+                 <input type="submit" id="signup" name="signup" value="Sign-up" style="position: absolute; top: 550px; left: 60px; width: 160px; height: 50px; border-radius: 25px; background-color: #116eee; font: Arial; font-size: 16px;color: white; font-weight: bold;">
+        
+                </form>
+                
+                <div>
+                    <h3>OR</h3>
+                </div>
+            
+            </div>
+        
+        </div>
+   
+    </body>
+
+</html>

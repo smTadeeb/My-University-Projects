@@ -1,0 +1,22 @@
+# Difference between structured and unstructured data
+
+https://www.g2.com/articles/qualitative-vs-quantitative-data
+
+https://www.g2.com/articles/structured-vs-unstructured-data
+
+
+# Total Participation & Partial Participation
+
+https://www.gatevidyalay.com/tag/total-and-partial-participation-in-dbms/
+
+
+# why we need specialisation in database
+
+https://www.educba.com/specialization-in-dbms/
+
+NOTE: The above link is also useful to learn PLSQL and DBMS as well.
+
+
+# 2nf and 3nf
+
+https://www.geeksforgeeks.org/second-normal-form-2nf/?ref=lbp

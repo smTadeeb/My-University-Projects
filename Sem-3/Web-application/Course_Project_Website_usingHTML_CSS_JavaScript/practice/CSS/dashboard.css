@@ -1,0 +1,248 @@
+
+h1
+{
+    font-size: 50px;
+}
+
+header 
+{
+  text-align: center;
+  background-color: black;  
+}
+
+#Headimg 
+{
+  height: 84px;
+  width: 149.268px;
+}
+
+.body
+{
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.hp
+{
+    padding: 60px;
+    text-align: center;
+    image-orientation:left ;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding-top:   20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+
+.items
+{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;    
+}
+
+.goals
+{
+    align-items: center;
+ /*   padding: 15px;
+    cursor: pointer;
+    border-radius: 256px;
+    border-top-left-radius: 256px;
+    border-top-right-radius: 256px;
+    border-bottom-right-radius: 256px;
+    border-bottom-left-radius: 256px;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 24%;
+    top: 30%; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.goal_text
+{
+    font-weight: 500;
+    padding-right: 14px;
+    padding-left: 14px;
+    font-size: 35px;
+    line-height: 1.7;
+}
+
+.goal_option
+{
+    display: flex;
+    cursor: pointer;
+/*  align-items: center;
+    border-radius: 16px;
+    margin-bottom: 5px;   */
+    justify-content: center;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+
+.goal_option_checked {                         /* not yet used */ 
+    background-color: #f2f7fd;
+}
+
+
+.progress_bar {
+    position: relative;
+    margin-left: 10px;
+    overflow: hidden;
+    position:absolute;
+    right: 28%;
+}
+
+
+.footer_cta {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 45px;
+    padding-top: 12px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: normal;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-default {
+    border-top-color: rgb(17, 110, 238);
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-right-color: rgb(17, 110, 238);
+    border-right-style: solid;
+    border-right-width: 4px;
+    border-bottom-color: rgb(17, 110, 238);
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-left-color: rgb(17, 110, 238);
+    border-left-style: solid;
+    border-left-width: 4px;
+    color: white;
+    background-color: blue;
+    font-size: 25px;
+    position: absolute;
+    top: 830px;
+}
+.footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+}
+
+#file
+{
+    text-align: left;
+}
+
+.img
+{
+  height: 60px; 
+  width: 62px; 
+  float: left;
+  align-items: center;
+}
+
+.imgD2
+{
+  height: 50px; 
+  width: 50px; 
+  float: left;
+  align-items: center;
+}
+
+/* ________________________________________________________________ */
+
+.D3_progress_bar
+{
+    font-size: 30px;
+/*  position: fixed;
+    right: 66px;  */
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 650px;
+}
+
+#D3_h1
+{
+    text-align: center;
+    font-size: 65px;
+}
+#D3_h2
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+.checkbox_input
+{
+    padding: 20px;
+    padding-right: 30px;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.select 
+{
+    padding: 14px;
+    font-size: 19px;
+    border: 3px solid black;
+    border-radius: 20px;
+    align-content: center;
+    font-weight: 500;
+    width: 190px;
+}
+
+.select_box_position
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.D3_select1_position
+{
+    font-size: 30px;
+/*  position: fixed;
+    right: 1266px;   */
+    font-weight: lighter;
+    padding-right: 100px;
+}
+
+.D3_select2_position
+{
+    font-size: 30px;
+/*  position: fixed;
+    right: 966px;     */
+    font-weight: lighter;
+}

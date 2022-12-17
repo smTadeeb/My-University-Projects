@@ -1,0 +1,201 @@
+<html>
+
+    <head><title>User Sign-up</title> <link rel="stylesheet" href="C:\xampp\htdocs\practice\CSS\Signup_page.css">
+        <meta charset="utf-8">
+        <script src="jquery-3.5.1.min.js"></script></head>
+
+    <body>
+        
+        <div class="box"><header><img src="C:\xampp\htdocs\practice\HTML\images\hello.png"></header>
+            
+            <img src="C:\xampp\htdocs\practice\HTML\images\St.-Petersburg-Russia.jpg" style="width: 1000px; height: 967px; position: absolute; top: 70px; left: 0px; opacity: 70%; ">
+            
+            <div id="rusi">
+
+                <h5 style="position: absolute; left: -120px; top: 50px; width: 400px; font: Arial; font-size: 16">Зарегистрируйтесь и начните изучать русский язык</h5>
+                <img src="C:\xampp\htdocs\practice\HTML\images\rus.png" class="ru" style="position: absolute; top: 10px; left: -60px;">
+                <h3>OR</h3>
+                
+            </div>
+            
+            <div id="cred">
+            <h1 style="position: absolute; top: -245px; left: 110px; font: Comic Sans MS; color: #D9001B; width: 200px; font-size: 28px"> Здравствуйте !</h1>
+                
+             
+                
+            <h5 style="position: absolute; top: -55px; left: 0px; width: 100px;font: Arial; font-size: 19px">Your email</h5>
+                
+            <h5 style="position: absolute; top: 15px; left: 0px; width: 100px;font: Arial; font-size: 19px">Username</h5>
+                
+            <h5 style="position: absolute; top: 160px; left: 0px; width: 200px;font: Arial; font-size: 19px">Confirm password</h5>
+                
+            <h5 id="pass" style="position: absolute; width: 200px; top: 85px; left: 0px;font: Arial; font-size: 19px">Create your password</h5>
+                
+                <h5 style="position: absolute; top: 305px; left: 0px; width: 200px;font: Arial; font-size: 19px">Country of origin</h5>
+                
+                <h5 style="position: absolute; top: 230px; left: 0px; width: 200px;font: Arial; font-size: 19px">Name</h5>
+             
+            <form action="signup.php" method="post" name="vForm"; onsubmit="return validate()"; validate> 
+                <ul type=none>
+                    <li>
+                        <input type="email" name="email" placeholder="Email" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 0px;" required>
+                    </li>
+                    
+                    <li>
+                        <input type="text" name="username" placeholder="Username" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 70px;" required>
+                    </li>
+                    
+                    <li>
+                        <select name="country"  style="width: 310px; height: 28px; position: absolute; left: 0px; top: 360px;" required>
+                        <option selected>--select your country--</option>
+                        <option>USA</option>
+                        <option>India</option>
+                        <option>UAE</option>
+                        <option>Azerbaijan</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>U.K.</option>
+                        <option>Ireland</option>
+                        <option>Germany</option>
+                        <option>Poland</option>
+                        <option>China</option>
+                        <option>Singapore</option>
+                        <option>Thailand</option>
+                        <option>Nepal</option>
+                        <option>Bhutan</option>
+                        <option>Australia</option>
+                        <option>Japan</option>
+                        <option>Russia</option>
+                        <option>Sri-Lanka</option>
+                        <option>South africa</option>
+                        <option>switzerland</option>
+                        <option>Sweden</option>
+                        <option>Saudi arabia</option>
+                        </select>
+                        <span id="password_error"></span>
+                    </li>
+                    
+                    <li>
+                        <input type="password" name="password" placeholder="password" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 140px;" required>
+                    </li>
+                    
+                    <li>
+                        <input type="password" name="cpassword" placeholder="confirm password" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 215px;" required>
+                    </li>
+                    
+                    <li>
+                        <input type="text" name="name" placeholder="Full name" style="width: 310px; height: 28px; position: absolute; left: 0px; top: 285px;">
+                    </li>
+                
+                </ul>
+                
+                <input type="submit" id="signup" name="signup" value="Sign-up" style="position: absolute; top: 550px; left: 60px; width: 160px; height: 50px; border-radius: 25px; background-color: #116eee; font: Arial; font-size: 16px;color: white; font-weight: bold;" onclick="return validate()">
+                
+                <div style="position: absolute; top: 450px; left: -100%; width: 400px; font: Arial; font-size: 20px;">
+                    
+                    <h5 style="position: absolute; top: -70px; left: 40px; width: 200px;font: Arial; font-size: 19px">Age</h5> 
+                    
+                    <ul type=none>
+                        
+                        <li>
+                        <input type="text" name="age" placeholder="age" style="width: 310px; height: 28px; position: absolute; left: 40px; top: -15px;" required>
+                        </li>
+                    
+                    <li>
+                        <label style="font: Arial; font-size: 20px; font-weight: bold;">Gender:</label>
+                        <label for="r1" style="color: white;">Male</label>
+                        <input type="radio" id="r1" name="r1" value="Male" required>
+                        <label for="r2" style="color: white;">Female</label>
+                        <input type="radio" id="r2" name="r1" value="Female" required>
+                        <label for="r3" style="color: white;">Other</label>
+                        <input type="radio" id="r2" name="r1" value="Other" required>
+                        </li>
+                    
+                    </ul>
+                
+                </div>
+                
+                </form>
+            
+            </div>
+        
+        </div>
+        
+        <script>
+            
+            // Getting all the input text objects.
+            var email     = document.forms["vForm"]["email"];
+            var username  = document.forms["vForm"]["username"];
+            var country   = document.forms["vForm"]["country"];
+            var password  = document.forms["vForm"]["password"];
+            var cpassword = document.forms["vForm"]["cpassword"];
+            var name      = document.forms["vForm"]["name"];
+            var age       = document.forms["vForm"]["age"];
+  
+        function validate(){  
+          // email validation
+          if (email.value == ""){
+              email.style.border = "1px solid red";
+              alert("Email is required");
+              email.focus();
+              return false;
+          }
+          
+          // username validation
+          if (username.value == ""){
+              username.style.border = "1px solid red";
+              alert("username is required");
+              username.focus();
+              return false;
+          }
+          
+          // country validation
+          if (country.value == ""){
+              country.style.border = "1px solid red";
+              alert("country is required");
+              country.focus();
+              return false;
+          }
+          
+          // password validation
+          if (password.value == ""){
+              password.style.border = "1px solid red";
+              alert("password is required");
+              password.focus();
+              return false;
+          }
+          
+         // Checking whether the two password are equal or not
+             if (password.value != cpassword.value) {
+                 password.style.border = "1px solid red";
+                 cpassword.style.border = "1px solid red";
+                 alert("The two password do not match");
+                 return false;  
+             }
+          
+          // age validation
+          if (age.value == "") {
+              age.style.border = "1px solid red";
+              alert("age is required");
+              age.focus();
+              return false;
+          }
+        }
+            
+            function ValidateEmail(inputText){
+                var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+                if(inputText.value.match(mailformat)){
+                    alert("You have entered a valid email address!");    //The pop up alert for a valid email address
+                    document.vForm.email.focus();
+                    return true;
+                }
+                else
+                {
+                    alert("You have entered an invalid email address!");    //The pop up alert for an invalid email address
+                    document.vForm.email.focus();
+                    return false;
+                }
+            }
+        </script>
+</body>
+</html>

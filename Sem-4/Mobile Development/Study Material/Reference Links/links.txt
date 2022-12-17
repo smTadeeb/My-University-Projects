@@ -1,0 +1,30 @@
+https://google-developer-training.github.io/android-developer-fundamentals-course-concepts-v2/unit-2-user-experience/lesson-4-user-interaction/4-1-c-buttons-and-clickable-images/4-1-c-buttons-and-clickable-images.html
+
+
+# Card view with Recycler view.
+_____________________________
+https://www.geeksforgeeks.org/cardview-using-recyclerview-in-android-with-example/
+
+
+# Cyber Seciruty quora 
+___________________
+https://www.quora.com/How-do-I-start-learning-about-Cyber-security
+
+
+# Android chatbots
+_______________
+https://www.geeksforgeeks.org/how-to-create-a-chatbot-in-android-with-brainshop-api/
+
+https://dzone.com/articles/build-android-chatbot-with-dialogflow-apiai
+
+https://www.androidhive.info/2016/02/android-push-notifications-using-gcm-php-mysql-realtime-chat-app-part-1/
+
+____________________
+# Android Study
+
+https://abhiandroid.com/ui/xml
+https://github.com/aritraroy/UltimateAndroidReference
+https://www.simplifiedcoding.net/author/probelalkhan/
+
+https://www.guru99.com/recyclerview-android-list.html#:~:text=What%20is%20RecyclerView%3F,maintaining%20limited%20number%20of%20views.
+https://google-developer-training.github.io/android-developer-fundamentals-course-concepts-v2/unit-4-saving-user-data/lesson-9-preferences-and-settings/9-1-c-shared-preferences/9-1-c-shared-preferences.html?q=

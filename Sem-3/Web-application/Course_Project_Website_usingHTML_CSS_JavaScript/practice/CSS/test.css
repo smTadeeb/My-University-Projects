@@ -1,0 +1,33 @@
+
+
+
+.sp_wrapper {
+    min-height: 100vh;
+}
+
+.page-wrap--small {
+    max-width: 60rem;
+}
+
+.page-wrap 
+{
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.sp__immersive-layout {
+    padding-top: 1.875rem;
+    padding-right: 0px;
+    padding-bottom: 1.875rem;
+    padding-left: 0px;
+}
+.experience-chooser {
+    padding-top: 1.875rem;
+    max-width: 40rem;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}

@@ -1,0 +1,94 @@
+
+/* ___________________________________________________________________________________________________________*/
+
+.wrapper {
+  background-image: url('turk3.jpg');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* We created a child class to reduce the opacity of the background as we cant do with                                    directly using of opacity property as it will reduce opacity of all elements 
+                              but
+                              in case of changing opacity of background-color we can use rgba() value which will change opacity of background only and not the text.
+                              */
+.wrapper::before {         
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    }
+/* ___________________________________________________________________________________________________________*/
+
+#Headimg 
+{
+  height: 84px;
+  width: 149.268px;
+  align-self: center;
+  position: relative;
+}
+
+.img
+{
+    background-color: black;
+    text-align: center;
+    position: relative;
+}
+
+.headerDiv
+{
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 280px;
+}
+
+
+.headerImg
+{
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+
+.div
+{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 200px; 
+     padding-top: 80px;
+     position: relative;
+     color: aliceblue;
+     font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+  margin: 30px auto;
+}
+
+.btn {
+  width: 98.6%;
+  border: none;
+  margin-top: 5px;
+  color: white;
+  background-color: #3b5998;
+  border-radius: 5px;
+  padding: 12px;
+}
